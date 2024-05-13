@@ -3,8 +3,8 @@ package org.launchcode.codingevents.controllers;
 import org.launchcode.codingevents.data.EventData;
 import org.launchcode.codingevents.models.Event;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.ui.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class EventController {
 
     @GetMapping("delete")
     public String displayDeleteEventForm(Model model) {
-        model.addAttribute("title", "Delete Event");
+        model.addAttribute("title", "Delete Events");
         model.addAttribute("events", EventData.getAll());
         return "events/delete";
     }
@@ -51,4 +51,4 @@ public class EventController {
         return "redirect:/events";
     }
 
-}
+}}
