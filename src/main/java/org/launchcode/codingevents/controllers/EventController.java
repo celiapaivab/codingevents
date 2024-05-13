@@ -3,11 +3,8 @@ package org.launchcode.codingevents.controllers;
 import org.launchcode.codingevents.data.EventData;
 import org.launchcode.codingevents.models.Event;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("events")
@@ -51,4 +48,4 @@ public class EventController {
         return "redirect:/events";
     }
 
-}}
+}
